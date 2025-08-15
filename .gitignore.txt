@@ -1,0 +1,35 @@
+# -----------------
+# Python ignores
+# -----------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.ipynb_checkpoints/
+
+# -----------------
+# Virtual environment
+# -----------------
+.venv/
+env/
+venv/
+
+# -----------------
+# Project-specific ignores
+# -----------------
+
+# Full dataset (too large for GitHub)
+lanedetectiondataset/
+
+# Generated results (output images/videos)
+results/
+
+# Large raw test videos (keep only 1–2 small samples for demo)
+testvideos/
+
+# Logs and temp files
+*.log
+*.tmp
+*.DS_Store

@@ -1,0 +1,22 @@
+# Paths to training, validation, and test image directories
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+# Define the number of classes
+nc: 8  # 7 obstacle classes + 1 lane segmentation class
+names: ['bike', 'bus', 'car', 'motor', 'person', 'rider', 'truck', 'lane']
+
+# Separate annotation paths for detection and segmentation
+annotation:
+  detect: ../train/labels  # Bounding box labels for obstacles
+  segment: ../train/segmentation  # Polygon labels for lanes
+
+# Roboflow dataset sources (optional, if you use Roboflow)
+roboflow:
+  - workspace: eastsky
+    project: bdd100k-e3s18
+    version: 1
+    license: CC BY 4.0
+    url: https://universe.roboflow.com/eastsky/bdd100k-e3s18/dataset/1
+
