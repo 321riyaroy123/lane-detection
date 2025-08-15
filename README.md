@@ -69,7 +69,7 @@ Make sure to place the dataset inside the `LaneDetectionDataset/` folder.
 
 ## 🎥 Example Output
 
-![Lane Detection Example](Results/finalOutput.gif)
+![Lane Detection Example](Result/finalOutput.gif)
 
 ---
 
