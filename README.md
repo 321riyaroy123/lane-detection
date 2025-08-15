@@ -7,11 +7,11 @@ It can process both static images and dynamic video streams to detect lane marki
 
 ## 📂 Project Structure
 ```
-lanedetectiondataset/   # Dataset (not included in repo, provide external link)
-testimage/              # Test images (sample included for quick testing)
-testvideos/             # Test videos (sample included for quick testing)
-results/                # Output results (generated after running the code)
-code/                   # Python scripts and Jupyter notebooks
+LaneDetectionDataset/   # Dataset (not included in repo, provide external link)
+TestImage/              # Test images (sample included for quick testing)
+TestVideos/             # Test videos (sample included for quick testing)
+Results/                # Output results (generated after running the code)
+lane_detection          # Python scripts
 requirements.txt        # Python dependencies
 README.md               # Project documentation (this file)
 ```
@@ -37,15 +37,15 @@ pip install -r requirements.txt
 
 Run lane detection on a sample image:
 ```bash
-python code/lane_detection.py --input testimage/sample.jpg
+python code/lane_detection.py --input TestImage/solidWhiteCurve.jpg
 ```
 
 Run lane detection on a sample video:
 ```bash
-python code/lane_detection.py --input testvideos/sample.mp4
+python code/lane_detection.py --input TestVideos/challenge.mp4
 ```
 
-The results will be saved in the `results/` folder.
+The results will be saved in the `Results/` folder.
 
 ---
 
@@ -54,7 +54,7 @@ The results will be saved in the `results/` folder.
 Due to size limitations, the dataset is not included in the repository.  
 You can download it from: [Google Drive / Kaggle link here].
 
-Make sure to place the dataset inside the `lanedetectiondataset/` folder.
+Make sure to place the dataset inside the `LaneDetectionDataset/` folder.
 
 ---
 
@@ -69,7 +69,7 @@ Make sure to place the dataset inside the `lanedetectiondataset/` folder.
 
 ## 🎥 Example Output
 
-*(Add a GIF or image from the results folder here to showcase your output)*
+![Lane Detection Example](Results/finalOutput.mp4)
 
 ---
 
